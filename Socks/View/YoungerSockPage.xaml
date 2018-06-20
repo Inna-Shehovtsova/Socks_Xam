@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Socks.View.YoungerSockPage">
+   
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+        </ContentPage.Padding>
+
+        <ContentPage.Title>Подростковые носки</ContentPage.Title>
+    <ContentPage.BackgroundImage>startpage_bg.png</ContentPage.BackgroundImage>
+        <ContentPage.Content>
+            <Frame OutlineColor="#eddde6" Padding="5" Margin="10" BackgroundColor="#eddde6" HasShadow="True" >
+                <AbsoluteLayout>
+                   <!--<Image Source="{Binding SockImageSourse}" Aspect="AspectFit" Scale="0.3"
+                          AbsoluteLayout.LayoutBounds="0.7,0, 173, 213" 
+                          AbsoluteLayout.LayoutFlags="PositionProportional"></Image>-->
+                    <StackLayout Orientation="Vertical" Padding="0" AbsoluteLayout.LayoutBounds="0,0, .3, 0.09" AbsoluteLayout.LayoutFlags="All">
+                        <!--<Label HorizontalOptions="Start" VerticalOptions="Center" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" 
+                           Text="Размер" TextColor="#8e3c6b" FontSize="Large"/>-->
+                        <Picker x:Name="picker" Title="Размер" ItemsSource="{Binding Sizes}" SelectedItem="{Binding CurrentSize, Mode=TwoWay}" 
+                            TextColor="#532a40" BackgroundColor="#eddde6" HorizontalOptions="Center" VerticalOptions="Center" 
+                            InputTransparent="False">
+                            <Picker.Items>
+                                <x:String>30</x:String>
+                                <x:String>31</x:String>
+                                <x:String>32</x:String>
+                                <x:String>33</x:String>
+                                <x:String>34</x:String>
+                                <x:String>35</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutBounds="0,0.9, 1, 0.6" AbsoluteLayout.LayoutFlags="All">
+                    <ScrollView>
+                <Label Text="{Binding CurrentDescription}" FontSize="Small"  TextColor ="#532a40" />
+                    </ScrollView>
+                     
+                </StackLayout>
+                    <Button Image="But_reset" ContentLayout="1,1" Text="Сброс" FontSize="Micro"
+                            Command="{Binding ResetCommand}"  CommandParameter="{Binding}" MinimumHeightRequest="40" 
+                            MinimumWidthRequest="40" TextColor ="#532a40"
+                            BorderRadius="0" Margin="0" BorderWidth="0" InputTransparent="False"
+                            Opacity="50"  BackgroundColor="#eddde6" BorderColor="#eddde6"
+                        AbsoluteLayout.LayoutBounds="0.05,0.25, 0.15, 0.15" AbsoluteLayout.LayoutFlags="All"/>
+                    <Grid BackgroundColor="#eddde6"  VerticalOptions="End" AbsoluteLayout.LayoutBounds="0.5,0.99, 0.5, 0.1" AbsoluteLayout.LayoutFlags="All" Padding="0" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Button Image="But_plus" FontSize="Large" Grid.Column="0" Grid.Row="0"  Command="{Binding AddRowCommand}"  CommandParameter="{Binding}"
+                            MinimumHeightRequest="83" MinimumWidthRequest="84" TextColor ="White"
+                            BorderRadius="30" Margin="0" BorderWidth="0" InputTransparent="False" 
+                            Opacity="50"   BackgroundColor="#eddde6" BorderColor="#eddde6"/>
+                        <Label Text="{Binding CurrentRow}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontSize="Large"  Grid.Column="1" Grid.Row="0"/>
+                        <Button Image="But_minus" FontSize="Large" Grid.Column="2" Grid.Row="0" Command="{Binding TakeOffRowCommand}"  
+                            CommandParameter="{Binding}" MinimumHeightRequest="83" MinimumWidthRequest="84" TextColor ="White"
+                            BorderRadius="30" Margin="0" BorderWidth="0" InputTransparent="False" Opacity="50"  
+                            BackgroundColor="#eddde6" BorderColor="#eddde6"/>
+
+                    </Grid>
+                </AbsoluteLayout>
+
+
+            </Frame>
+
+        </ContentPage.Content>
+    </ContentPage>
+
+
+    

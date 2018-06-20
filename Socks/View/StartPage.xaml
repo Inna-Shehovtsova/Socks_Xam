@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Socks"
+             x:Class="Socks.View.StartPage">
+   
+    <ContentPage.Title>Носки</ContentPage.Title>
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 30" />
+    </ContentPage.Padding>
+   <!-- <ContentPage.BackgroundColor>#39212e</ContentPage.BackgroundColor>-->
+    <ContentPage.BackgroundImage>
+    startpage_bg.png
+    </ContentPage.BackgroundImage>
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="0" Margin="0" >
+            
+            
+           <Grid AbsoluteLayout.LayoutBounds="0.7,0.5, 0.7, 0.75" HorizontalOptions="Center" 
+                 VerticalOptions="Start" Padding ="0, 20, 0, 0" Margin="0" ColumnSpacing="15" 
+                 RowSpacing="15" AbsoluteLayout.LayoutFlags="All">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+               
+                        <Button Scale="1" Image="startpage_0013_Nosok35_40.png" Text="36-40"  HorizontalOptions="Fill"
+                                VerticalOptions="Fill" ContentLayout="Top,1" TextColor="#F8E2EE"  
+                    Grid.Column="0" Grid.Row="0" BackgroundColor="#39212e" BorderColor="#311825"
+                                BorderWidth="4" BorderRadius="4" Margin="0" FontSize="Small"
+                                 Command="{Binding CountWomanSockCommand}" 
+                                x:Name="button_35_40"></Button>
+                  
+                        <Button Image="startpage_0012_Nosok25_30.png" Text="25-30" HorizontalOptions="Fill" VerticalOptions="Fill" ContentLayout="1,1" TextColor="#F8E2EE" 
+                     Grid.Column="1" Grid.Row="0" BackgroundColor="#39212e" BorderColor="#311825" 
+                                BorderWidth="4" BorderRadius="4" Margin="0"  FontSize="Small"
+                                 Command="{Binding CountKidSockCommand}" x:Name="button_25_30"></Button>
+                  
+                <Button Image="startpage_0008_Nosok41_45.png" Text="41-45" HorizontalOptions="Fill" VerticalOptions="Fill" ContentLayout="1,1" TextColor="#F8E2EE"  
+                     Grid.Column="1" Grid.Row="1" BackgroundColor="#39212e" BorderColor="#311825" 
+                        BorderWidth="4" BorderRadius="4" Margin="0"  FontSize="Small"
+                         Command="{Binding CountManSockCommand}" x:Name="button_41_45"></Button>
+                   
+                        <Button Image="startpage_0011_Nosok31_35.png" Text="31-35" HorizontalOptions="Fill" VerticalOptions="Fill" ContentLayout="1,1" TextColor="#F8E2EE"  
+                     Grid.Column="0" Grid.Row="1" BackgroundColor="#39212e" BorderColor="#311825" 
+                                BorderWidth="4" BorderRadius="4"  Margin="0"  FontSize="Small"
+                                 Command="{Binding CountYoungerSockCommand}" x:Name="button_31_35"></Button>
+                    
+            </Grid>
+           
+            <Frame AbsoluteLayout.LayoutBounds="0.7,0.95, 0.8, 0.12" AbsoluteLayout.LayoutFlags="All" 
+                   BackgroundColor="#39212e" Margin="1" Padding="4" HasShadow="True" OutlineColor="#39212E"
+                       CornerRadius="10" Scale="0.85" x:Name="FramePlot">
+
+                <StackLayout Orientation=" Vertical">
+                    <Slider Maximum="100" Minimum="5" BackgroundColor="#8E3C6B" 
+                Value="{Binding PlotX}" />
+                <Label Text="{Binding textPlotX}" FontSize="Small" TextColor="#F8E2EE"   
+                       HorizontalOptions="Center" VerticalOptions="Center" 
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                </StackLayout>
+            </Frame>
+            <Frame AbsoluteLayout.LayoutBounds="1.3,0.5, 1.5, 0.12" AbsoluteLayout.LayoutFlags="All" 
+                   BackgroundColor="#39212e" Margin="1" Padding="4" HasShadow="True" OutlineColor="#39212E"
+                       CornerRadius="10" Scale="0.85" Rotation="270" x:Name="FramePlotVert">
+                       <StackLayout Orientation=" Vertical">
+               
+                    <Slider Maximum="60" Minimum="5" BackgroundColor="#8E3C6B"
+                Value="{Binding PlotY}" />
+                    <Label Text="{Binding textPlotY}" FontSize="Small" TextColor="#F8E2EE"   
+                           HorizontalOptions="Center" VerticalOptions="Center"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                
+                </StackLayout>
+            </Frame>
+              
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>
