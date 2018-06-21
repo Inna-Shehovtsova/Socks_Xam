@@ -1,7 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using Socks.DataService;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Socks
 {
@@ -11,7 +11,7 @@ namespace Socks
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+			MainPage = new NavigationPage(new Socks.View.StartPage());
         }
 
         protected override void OnStart()
