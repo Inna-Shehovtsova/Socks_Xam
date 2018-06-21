@@ -100,37 +100,13 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
@@ -139,6 +115,64 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\startpage_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\startpage_bg.imageset\startpage_bg.png" />
+    <ImageAsset Include="Assets.xcassets\startpage_0012_Nosok25_30.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\startpage_0011_Nosok31_35.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\startpage_0011_Nosok31_35.imageset\startpage_0011_Nosok31_35.png" />
+    <ImageAsset Include="Assets.xcassets\startpage_0013_Nosok35_40.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\startpage_0013_Nosok35_40.imageset\startpage_0013_Nosok35_40.png" />
+    <ImageAsset Include="Assets.xcassets\startpage_0008_Nosok41_45.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\startpage_0008_Nosok41_45.imageset\startpage_0008_Nosok41_45.png" />
+    <ImageAsset Include="Assets.xcassets\startpage_0012_Nosok25_30.imageset\startpage_0012_Nosok25_30-.png" />
+    <ImageAsset Include="Assets.xcassets\startpage_0012_Nosok25_30.imageset\startpage_0012_Nosok25_30.png" />
+    <ImageAsset Include="Assets.xcassets\But_plus.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\But_plus.imageset\But_plus.png" />
+    <ImageAsset Include="Assets.xcassets\But_minus.imageset\But_minus.png" />
+    <ImageAsset Include="Assets.xcassets\But_minus.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\But_reset.imageset\But_reset.png" />
+    <ImageAsset Include="Assets.xcassets\But_reset.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_000_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_000_Nosok.imageset\woman_000_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_001_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_001_Nosok.imageset\woman_001_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_002_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_002_Nosok.imageset\woman_002_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_003_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_003_Nosok.imageset\woman_003_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_004_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_004_Nosok.imageset\woman_004_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_005_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_005_Nosok.imageset\woman_005_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_006_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_006_Nosok.imageset\woman_006_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_007_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_007_Nosok.imageset\woman_007_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_008_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_008_Nosok.imageset\woman_008_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_009_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_009_Nosok.imageset\woman_009_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_010_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_010_Nosok.imageset\woman_010_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_011_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_011_Nosok.imageset\woman_011_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_012_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_012_Nosok.imageset\woman_012_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_013_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_013_Nosok.imageset\woman_013_Nosok.png" />
+    <ImageAsset Include="Assets.xcassets\woman_014_Nosok.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\woman_014_Nosok.imageset\woman_014_Nosok.png" />
+    <InterfaceDefinition Include="LaunchScreenSocks.storyboard" />
+    <ImageAsset Include="Assets.xcassets\launchscreen.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\launchscreen.imageset\launchscreen.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage-9.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage-4.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage-5.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage-6.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage-7.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Webp.net-resizeimage-8.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -155,5 +189,34 @@
       <Project>{761B0003-F4AC-4A70-9265-A616C7701A4D}</Project>
       <Name>Socks</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\startpage_bg.imageset\" />
+    <Folder Include="Assets.xcassets\startpage_0012_Nosok25_30.imageset\" />
+    <Folder Include="Assets.xcassets\startpage_0011_Nosok31_35.imageset\" />
+    <Folder Include="Assets.xcassets\startpage_0013_Nosok35_40.imageset\" />
+    <Folder Include="Assets.xcassets\startpage_0008_Nosok41_45.imageset\" />
+    <Folder Include="Assets.xcassets\But_plus.imageset\" />
+    <Folder Include="Assets.xcassets\But_minus.imageset\" />
+    <Folder Include="Assets.xcassets\But_reset.imageset\" />
+    <Folder Include="Assets.xcassets\woman_000_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_001_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_002_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_003_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_004_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_005_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_006_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_007_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_008_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_009_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_010_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_011_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_012_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_013_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\woman_014_Nosok.imageset\" />
+    <Folder Include="Assets.xcassets\launchscreen.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
 </Project>
