@@ -2,6 +2,7 @@
 
 using System.Windows.Input;
 using Xamarin.Forms;
+using System;
 
 
 namespace Socks.ModelView
@@ -28,15 +29,16 @@ namespace Socks.ModelView
             CountYoungerSockCommand = new Command(CountYongerSock);
             CountManSockCommand = new Command(CountManSock);
         }
-        public double PlotX
+		public double PlotX
         {
             get { return px; }
             set
             {
-                
-                if (px != value )
-                px = value;
+                double roundedValue = Math.Round(value,1);               
+                if (px != roundedValue)
+                    px = roundedValue;
                 OnPropertyChanged("PlotX");
+                OnPropertyChanged("textPlotX");
             }
         }
         public double PlotY
@@ -44,12 +46,25 @@ namespace Socks.ModelView
             get { return py; }
             set
             {
-                
-                if (py != value)
-                    py = value;
+                double roundedValue = Math.Round(value, 1);
+                if (py != roundedValue)
+                    py =   roundedValue;
                 OnPropertyChanged("PlotY");
+                OnPropertyChanged("textPlotY");
             }
         }
+
+        public string textPlotX
+        {
+            get { string retS = px.ToString() +" петель на 10 см";
+                return retS; }
+        }
+
+        public string textPlotY
+        {
+            get { return py.ToString() + " рядов на 10 см"; }
+        }
+        
 
         protected void OnPropertyChanged(string propName)
         {

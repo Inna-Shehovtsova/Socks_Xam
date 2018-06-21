@@ -18,7 +18,7 @@ namespace Socks.View
     {
 		//ShapeDrawable drawable;
         public StartPage()
-        {
+		{
             InitializeComponent();
             BindingContext = new Socks.ModelView.StartViewModel() { Navigation = this.Navigation, page = this };
 			var scr3eensize = Device.Info.PixelScreenSize;

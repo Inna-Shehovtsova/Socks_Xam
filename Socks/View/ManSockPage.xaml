@@ -7,19 +7,98 @@
     </ContentPage.Padding>
 
     <ContentPage.Title>Мужские носки</ContentPage.Title>
-   
+     <Page.Resources>
+    <ResourceDictionary>
+            <Color x:Key="frameBgColor"     >#eddde6</Color>
+            <Color x:Key="frameBorderColor" >#eddde6</Color>
+            <Color x:Key="buttonTextColor"  >#532a40</Color>
+            <Color x:Key="sliderBgColor"    >#8E3C6B</Color>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="FontSize"         Value="Large"   />
+                <Setter Property="FontAttributes"   Value="Bold" />
+                <Setter Property="BackgroundColor"  Value="{DynamicResource frameBgColor}" />
+                <Setter Property="BorderColor"      Value="{DynamicResource frameBorderColor}" />
+                <Setter Property="TextColor"        Value="{DynamicResource buttonTextColor}" />
+                <Setter Property="VerticalOptions"  Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="BorderWidth"      Value="0" />
+                <Setter Property="BorderRadius"     Value="1" />
+                <Setter Property="Margin"           Value="0" />
+                <Setter Property="ContentLayout"    Value="Top,1" />
+            </Style>
+            <Style x:Key="ResetButtonStyle" TargetType="Button">
+                <Setter Property="FontSize"         Value="Micro"   />
+                <Setter Property="FontAttributes"   Value="Bold" />
+                <Setter Property="BackgroundColor"  Value="{DynamicResource frameBgColor}" />
+                <Setter Property="BorderColor"      Value="{DynamicResource frameBorderColor}" />
+                <Setter Property="TextColor"        Value="{DynamicResource buttonTextColor}" />
+                <Setter Property="VerticalOptions"  Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="BorderWidth"      Value="1" />
+                <Setter Property="BorderRadius"     Value="1" />
+                <Setter Property="Margin"           Value="0" />
+                <Setter Property="ContentLayout"    Value="Top,1" />
+            </Style>
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor"  Value="{DynamicResource frameBgColor}" />
+                <Setter Property="OutlineColor"     Value="{DynamicResource frameBorderColor}" />
+                <Setter Property="Margin"           Value="10" />
+                <Setter Property="Padding"          Value="5" />
+                <Setter Property="HasShadow"        Value="True" />
+                <Setter Property="CornerRadius"     Value="10"/>
+            </Style>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor"        Value="{DynamicResource buttonTextColor}" />
+                <Setter Property="FontSize"         Value="Small"   />
+                <Setter Property="HorizontalOptions"       Value="Center"   />
+                <Setter Property="VerticalOptions"  Value="Start"   />
+                <Setter Property="HorizontalTextAlignment" Value="Center"   />
+                <Setter Property="VerticalTextAlignment"   Value="Start"   />
+                 </Style>
+            <Style x:Key="PickerStyle" TargetType="Picker">
+                <Setter Property="TextColor"        Value="{DynamicResource buttonTextColor}" />
+                <Setter Property="BackgroundColor"  Value="{DynamicResource frameBorderColor}" />
+                <Setter Property="FontSize"         Value="Small"   />
+                <Setter Property="HorizontalOptions"       Value="Center"   />
+                <Setter Property="VerticalOptions"  Value="Center"   />
+                <Setter Property="InputTransparent" Value="False"/>
+             </Style>
+        </ResourceDictionary>
+        </Page.Resources>
+     <ContentPage.BackgroundImage>
+    startpage_bg.png
+    </ContentPage.BackgroundImage>
     <ContentPage.Content>
-        <Frame OutlineColor="#eddde6" Padding="5" Margin="10" BackgroundColor="#eddde6" HasShadow="True" >
-            <AbsoluteLayout>
-                <!--<Image Source="{Binding SockImageSourse}" Scale="0.3" Aspect="AspectFit" 
-                       AbsoluteLayout.LayoutBounds="0.7,0.1, 173, 213" 
-                       AbsoluteLayout.LayoutFlags="PositionProportional"></Image>-->
-                <StackLayout Orientation="Vertical" Padding="0" AbsoluteLayout.LayoutBounds="0,0, .3, 0.09" AbsoluteLayout.LayoutFlags="All">
-                    <!--<Label HorizontalOptions="Start" VerticalOptions="Center" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" 
-                           Text="Размер" TextColor="#8e3c6b" FontSize="Large"/>-->
-                    <Picker x:Name="picker" Title="Размер" ItemsSource="{Binding Sizes}" SelectedItem="{Binding CurrentSize, Mode=TwoWay}" 
-                            TextColor="#532a40" BackgroundColor="#eddde6" HorizontalOptions="Center" VerticalOptions="Center" 
-                            InputTransparent="False">
+        <Frame Style="{DynamicResource FrameStyle}"  
+               HorizontalOptions="FillAndExpand" 
+               VerticalOptions="FillAndExpand">
+        <Grid  HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand" Padding="0" Margin="0"
+                ColumnSpacing="5" RowSpacing="5" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Picker x:Name="picker" 
+                    Title="Размер" 
+                    ItemsSource="{Binding Sizes}" 
+                    SelectedItem="{Binding CurrentSize, Mode=TwoWay}" 
+                    Style="{DynamicResource PickerStyle}"  
+                    Grid.Row="0"
+                    Grid.Column="0">
                         <Picker.Items>
                             <x:String>40</x:String>
                             <x:String>41</x:String>
@@ -29,48 +108,48 @@
                             <x:String>45</x:String>
                         </Picker.Items>
                     </Picker>
-                </StackLayout>
-
-               <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutBounds="0,0.9, 1, 0.6" AbsoluteLayout.LayoutFlags="All">
+                <Image Source="{Binding SockImageSourse}" Scale="0.3" Aspect="AspectFit" 
+                       Grid.Column="1"
+                       Grid.Row="0"
+                       Grid.RowSpan="3"
+                       Grid.ColumnSpan="4">
+                    
+                </Image>
+                <StackLayout Orientation="Vertical" 
+                             Grid.Row="3" 
+                             Grid.Column="0" 
+                             Grid.ColumnSpan="5" 
+                             Grid.RowSpan="4">
                     <ScrollView>
-                <Label Text="{Binding CurrentDescription}" FontSize="Small"  TextColor ="#532a40" />
+                        <Label Text="{Binding CurrentDescription}" Style="{DynamicResource LabelStyle}" />
                     </ScrollView>
-                     
-                </StackLayout>
-                <Button Image="But_reset" ContentLayout="1,1" Text="Сброс" FontSize="Micro"
-                            Command="{Binding ResetCommand}"  CommandParameter="{Binding}" MinimumHeightRequest="40" 
-                            MinimumWidthRequest="40" TextColor ="#532a40"
-                            BorderRadius="0" Margin="0" BorderWidth="0" InputTransparent="False"
-                            Opacity="50"  BackgroundColor="#eddde6" BorderColor="#eddde6"
-                        AbsoluteLayout.LayoutBounds="0.05,0.25, 0.15, 0.15" AbsoluteLayout.LayoutFlags="All"/>
-                <Grid BackgroundColor="#eddde6"  VerticalOptions="End" AbsoluteLayout.LayoutBounds="0.5,0.99, 0.5, 0.1" AbsoluteLayout.LayoutFlags="All" Padding="0" Margin="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
+                 </StackLayout>
+                <Button Style="{DynamicResource ResetButtonStyle}" 
+                        Grid.Row="2" Grid.Column="0"
+                        Image="But_reset" 
+                        Text="Сброс" 
+                        Command="{Binding ResetCommand}"  
+                        CommandParameter="{Binding}"/>
 
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Button Image="But_plus" FontSize="Large" Grid.Column="0" Grid.Row="0"  Command="{Binding AddRowCommand}"  CommandParameter="{Binding}"
-                            MinimumHeightRequest="83" MinimumWidthRequest="84" TextColor ="White"
-                            BorderRadius="30" Margin="0" BorderWidth="0" InputTransparent="False" 
-                            Opacity="50"   BackgroundColor="#eddde6" BorderColor="#eddde6"/>
-                    <Label Text="{Binding CurrentRow}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontSize="Large"  Grid.Column="1" Grid.Row="0"/>
-                    <Button Image="But_minus" FontSize="Large" Grid.Column="2" Grid.Row="0" Command="{Binding TakeOffRowCommand}"  
-                            CommandParameter="{Binding}" MinimumHeightRequest="83" MinimumWidthRequest="84" TextColor ="White"
-                            BorderRadius="30" Margin="0" BorderWidth="0" InputTransparent="False" Opacity="50"  
-                            BackgroundColor="#eddde6" BorderColor="#eddde6"/>
+                <Button Style="{DynamicResource ButtonStyle}" 
+                        Image="But_plus" 
+                        Grid.Column="1" Grid.Row="7"  
+                        Command="{Binding AddRowCommand}"  
+                        CommandParameter="{Binding}"
+                        />
 
-                </Grid>
-            </AbsoluteLayout>
+                <Label Style="{DynamicResource LabelStyle}" 
+                       Text="{Binding CurrentRow}"
+                       FontSize="Large"
+                       Grid.Column="2" Grid.Row="7" VerticalTextAlignment="End"/>
 
+                <Button Style="{DynamicResource ButtonStyle}" 
+                        Grid.Column="3" Grid.Row="7"
+                        Image="But_minus" 
+                        Command="{Binding TakeOffRowCommand}"  
+                        CommandParameter="{Binding}" />
 
-        </Frame>
-
-    </ContentPage.Content>
+            </Grid>
+           </Frame>  
+       </ContentPage.Content>
 </ContentPage>
-
-
-    
